@@ -20,6 +20,7 @@
         <th>Km Atual</th>
         <th>Última atualização</th>
         <th width="5%">Editar</th>
+        <th width="5%">Excluir</th>
     </tr>
   </thead>
 
@@ -31,6 +32,7 @@
       <td>{{veiculo.kmAtual}}</td>
       <td>{{veiculo.dataAtualizacao | date:'dd/MM/yyyy'}}</td>
       <td><a class="waves-effect waves-light btn-small" (click)="editarVeiculo(veiculo.id)"><i class="material-icons">edit</i></a></td>
+      <td><a class="waves-effect waves-light btn-small red" (click)="excluirVeiculo(veiculo.id)"><i class="material-icons">delete</i></a></td>
     </tr>
   </tbody>
 </table>

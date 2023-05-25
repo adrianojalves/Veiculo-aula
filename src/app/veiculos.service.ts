@@ -33,4 +33,8 @@ export class VeiculosService {
    atualizarVeiculo(veiculo:Veiculo){
     return this.httpClient.put<Veiculo>(this.urlBase+"/"+veiculo.id, veiculo);
   }
+
+  removerVeiculo(id:number){
+    return this.httpClient.delete<Veiculo>(this.urlBase+"/"+id);
+  }
 }

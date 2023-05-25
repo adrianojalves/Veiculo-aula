@@ -38,4 +38,12 @@ export class PesquisaVeiculoComponent implements OnInit {
     this.router.navigate(['/', id]);
   }
 
+  excluirVeiculo(id: number){
+    this.service.removerVeiculo(id)
+    .subscribe(() => {
+        this.buscarVeiculos();
+
+        alert("Veiculo excluído");
+    });
+  }
 }

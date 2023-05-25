@@ -63,15 +63,6 @@
       "kmAtual": 54654,
       "cor": "Vermelho",
       "id": 6
-    },
-    {
-      "id": 7,
-      "nome": "Fiesta 2005",
-      "dataAtualizacao": "2023-01-18",
-      "status": true,
-      "kmAtual": "1235",
-      "cor": "Preta",
-      "tipoId": 1
     }
   ]
 }
