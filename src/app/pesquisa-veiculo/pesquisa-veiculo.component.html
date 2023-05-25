@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="nome" name="nome" [(ngModel)]="nome" type="text">
+      <label for="nome">Nome do Veículo</label>
+    </div>
+    <div class="input-field col s4">
+      <a class="waves-effect waves-light btn" (click)="buscarVeiculos()"><i class="material-icons left">search</i>Pesquisar</a>
+    </div>
+    <div class="input-field col s2" style="text-align: right">
+      <a class="waves-effect waves-light btn blue" routerLink="/new" ><i class="material-icons left">add_circle</i>Novo</a>
+    </div>
+  </div>
+<table class="striped">
+  <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Cor</th>
+        <th>Km Atual</th>
+        <th>Última atualização</th>
+        <th width="5%">Editar</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let veiculo of listaVeiculos">
+      <td>{{veiculo.id}}</td>
+      <td>{{veiculo.nome}}</td>
+      <td>{{veiculo.cor}}</td>
+      <td>{{veiculo.kmAtual}}</td>
+      <td>{{veiculo.dataAtualizacao | date:'dd/MM/yyyy'}}</td>
+      <td><a class="waves-effect waves-light btn-small" (click)="editarVeiculo(veiculo.id)"><i class="material-icons">edit</i></a></td>
+    </tr>
+  </tbody>
+</table>
+</div>

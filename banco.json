@@ -1,0 +1,77 @@
+{
+  "tipos": [
+    {
+      "id": 1,
+      "nome": "Carro"
+    },
+    {
+      "id": 2,
+      "nome": "Moto"
+    }
+  ],
+  "veiculos": [
+    {
+      "id": 1,
+      "nome": "Corola",
+      "dataAtualizacao": "2002-09-10",
+      "status": true,
+      "kmAtual": 120000,
+      "cor": "Branco",
+      "tipoId": 1
+    },
+    {
+      "id": 2,
+      "nome": "Ford Ranger",
+      "dataAtualizacao": "2002-10-20",
+      "status": true,
+      "kmAtual": 8000,
+      "cor": "Cinza",
+      "tipoId": 1
+    },
+    {
+      "id": 3,
+      "nome": "Fazer 250",
+      "dataAtualizacao": "2020-10-12",
+      "status": true,
+      "kmAtual": 9000,
+      "cor": "Azul",
+      "tipoId": 2
+    },
+    {
+      "id": 4,
+      "nome": "Yes 125",
+      "dataAtualizacao": "2022-11-01",
+      "status": false,
+      "kmAtual": 29000,
+      "cor": "Preta",
+      "tipoId": 2
+    },
+    {
+      "id": 5,
+      "nome": "Gol",
+      "dataAtualizacao": "2000-05-20",
+      "status": true,
+      "kmAtual": 149000,
+      "cor": "Branco",
+      "tipoId": 1
+    },
+    {
+      "status": true,
+      "tipoId": 1,
+      "nome": "Mobi",
+      "dataAtualizacao": "2023-03-24",
+      "kmAtual": 54654,
+      "cor": "Vermelho",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nome": "Fiesta 2005",
+      "dataAtualizacao": "2023-01-18",
+      "status": true,
+      "kmAtual": "1235",
+      "cor": "Preta",
+      "tipoId": 1
+    }
+  ]
+}

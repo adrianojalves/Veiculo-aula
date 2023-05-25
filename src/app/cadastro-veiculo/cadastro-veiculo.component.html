@@ -1,0 +1,59 @@
+<div class="container">
+  <nav>
+    <div class="nav-wrapper blue">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a (click)="salvar()" >Salvar</a></li>
+        <li><a routerLink="/">Voltar</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- id: number;
+  nome: string;
+  dataAtualizacao: Date;
+  status: boolean;
+  kmAtual: number;
+  cor: string;
+  tipoId: number; -->
+  <div class="row" style="margin-top: 15px">
+    <div class="input-field col s9">
+      <input id="nome" name="nome" [(ngModel)]="veiculo!.nome" type="text">
+      <label class="active" for="nome">Nome do Veículo</label>
+    </div>
+    <div class="input-field col s3">
+      <input id="kmAtual" name="kmAtual" [(ngModel)]="veiculo!.kmAtual" maxlength="6" type="text">
+      <label class="active" for="kmAtual">Km Atual</label>
+    </div>
+
+    <div class="input-field col s6">
+      <select id="selectCores" name="selectCores" [(ngModel)]="veiculo!.cor" #cores>
+        <option [ngValue]="{}" disabled>Selecione uma cor</option>
+        <option *ngFor="let c of CORES" [ngValue]="c">{{ c }}</option>
+      </select>
+      <label>Cor</label>
+    </div>
+
+    <div class="input-field col s6">
+      <select id="selectTipos" name="selectTipos" [(ngModel)]="veiculo!.tipoId" #tiposSelect>
+        <option [ngValue]="{}" disabled>Selecione uma tipo</option>
+        <option *ngFor="let t of tipos" [ngValue]="t.id">{{ t.nome }}</option>
+      </select>
+      <label>Tipo</label>
+    </div>
+
+    <div class="input-field col s6">
+      <input id="dataAtualizacao" name="dataAtualizacao" [(ngModel)]="veiculo!.dataAtualizacao" type="text" class="datepicker" #dateAtualizacao>
+    </div>
+
+    <div class="input-field col s6">
+      <div class="switch">
+        <label>
+          Inativo
+          <input type="checkbox" id="status" name="status" [(ngModel)]="veiculo!.status">
+          <span class="lever"></span>
+          Ativo
+        </label>
+      </div>
+    </div>
+
+  </div>
+</div>
